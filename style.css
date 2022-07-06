@@ -1,0 +1,97 @@
+/* Formatação do HTML base */
+body {
+    margin: 0;
+    background-color: #789fba;
+    color: white;
+}
+
+footer {
+    background-color: #aca2d0;
+    display: flex;
+}
+
+
+li {
+    list-style-type: none; 
+}
+
+h1 {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+
+/* Formatação dos Id´s */
+
+/* Headers id´s */
+
+#logo{
+    float: left;
+    padding-top: 10px; 
+}
+
+#ietec_logo {
+    border-radius: 100%;
+    width: 40%;
+    height: 50%;
+}
+
+#link_cabecalho {
+    font-size: 24px;
+}
+#link_cabecalho:hover{
+
+    background-color: gold;
+}
+
+/* Body id´s */
+
+#principal{
+    margin-top: 150px;
+}
+
+#principal, h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#quem_somos {
+    background-color: #aca2d0;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 10px;
+}
+
+#patrocinadores {
+    background-color: #aca2d0;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 10px;
+}
+
+/* Footer id´s */
+#contato {
+    width: 33%;
+}
+
+#social-media {
+    width: 33%;
+}
+
+#endereco {
+    width: 33%;
+}
+
+/* Body class´s */
+.linha_maior {
+    width: 70%;
+    color: gold;
+}
+.linha_menor {
+    width: 50%;   
+    color: gold;
+}
