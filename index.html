@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="Icon" href="/img/ietec_logo.png">
+        <title>IETEC</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="Icon" href="/img/ietec_logo.png">
-    <title>IETEC</title>
-</head>
-<body>
-    
+    </head>
+
+    <body>
     <!-- Cabeçalho -->
     <header>
+
+<!--Menu-->
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+  
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">Logo</a>
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- End smartphone / tablet look -->
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+
+    <div>
         <!-- Logo -->
-        <div id="logo" class="col-xs-12, col-sm-12">
+        <div id="logo">
             <a href="/index.html">
                 <img src="/img/ietec_logo.png" class="ietec_logo" alt="IETEC logo">
             </a>
-        </div>
-        <div class="col-xs-12, col-sm-12">
+
             <!-- Links do cabeçalho -->
             <ul id="links_header">                    
                 <li id="relatorio_header"><a href="/html/relatorios.html">Relatórios</a></li>
@@ -30,14 +60,17 @@
                 <li id="planejamento_header"><a href="/html/planejamento.html">Nosso Planejamento</a></li>   
                 <li id="quem_somos_header"><a href="/html/quem_somos.html">Quem somos?</a></li>
             </ul>
+
         </div>
 
-    </header>
+    </div>
 
+    </header>
         <!-- div principal -->
         <div id="principal">
             <h1> Incubadora de Empresas Tecnológicas</h1>
             <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum laoreet eleifend. Maecenas rutrum augue ac quam malesuada, eget egestas nisl pulvinar. Sed vel lacinia nibh. Nunc et lacus et urna vulputate bibendum nec eget diam. Ut sollicitudin nulla ac bibendum laoreet. Nullam consectetur velit ut commodo bibendum. Maecenas rhoncus lacus vel consectetur accumsan. Curabitur fringilla finibus erat. Donec efficitur aliquam lacus, sed fermentum mauris bibendum vitae. Aliquam hendrerit nulla non lectus feugiat, id rutrum neque tempus. Aliquam ante velit, tincidunt eget iaculis in, elementum at leo. Pellentesque at orci gravida, pharetra lorem suscipit, malesuada eros. Sed tortor risus, sagittis et tortor ut, fringilla condimentum ligula. Quisque et imperdiet metus, eget congue sapien. Pellentesque vel lacus laoreet, pharetra mi vitae, varius tortor. Curabitur id elementum nisl. </p>
+
         </div>
 
         <hr class="linha_maior">
@@ -46,10 +79,10 @@
         <!-- Breve apresentação da IETEC -->
         <div id="quem_somos">
             <h3>Quem Somos?</h3>
-            <img src="/img/ietec_logo.png" alt="IETEC logo" class="img_quemsomos">
             <p class="div_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum laoreet eleifend. Maecenas rutrum augue ac quam malesuada, eget egestas nisl pulvinar.</p>
+            <img src="/img/ietec_logo.png" alt="IETEC logo" class="img_quemsomos">
         </div>
-    
+
         <hr class="linha_maior">
         <hr class="linha_menor">
 
@@ -58,46 +91,47 @@
             <h3>Colaboradores</h3>
             <img src="/img/icon_perfil.png" alt="Icone_dos_patrocinadores" id="patrocinador_icon">
             <p class="div_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum laoreet eleifend. Maecenas rutrum augue ac quam malesuada, eget egestas nisl pulvinar.</p>
+
         </div>
 
     <footer>
-            <!-- Rodapé -->
+        <!-- Rodapé -->
+        <div id="contato">
+            
+            <!-- Telefone -->
+            <h3>Contato</h3>
+            <ul type="square">
+                <li>Telefone: (22) 9987583</li>
+                <li>Telefone: (22) 9987583</li>
+            
+            <!-- E-mail -->
+                <li>E-mail: ietec@gmail.com</li>
+            </ul>
+            
+        </div>
 
-            <div id="contato">
-                
-                <!-- Telefone -->
-                <h3>CONTATO</h3>
-                <ul type="square">
-                    <li>TELEFONE: (22) 9987583</li>
-                    <li>TELEFONE: (22) 9987583</li>
-                
-                <!-- E-mail -->
-                    <li>EMAIL: ietec@gmail.com</li>
-                </ul>
-                
-            </div>
+        <!-- Redes Sociais -->
+        <div id="social-media">
+            <h3>Mídias Sociais</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+            
+        </div>
 
-            <!-- Redes Sociais -->
-            <div id="social-media">
-                <h3>SOCIAL MIDIA</h3>
+        <!-- Endereço -->
+        <div id="endereco">
+            <h3>Endereço</h3>
 
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-                
-            </div>
+            <p class="paragrafos">Av. Gov. Roberto Silveira, 1900 - Jardim Ouro Preto, Nova Friburgo. CEP: 28635080</p>
+            <p class="paragrafos">Aberto das 8 às 17 horas.</p>
 
-            <!-- Endereço -->
-            <div id="endereco">
-                <h3>ENDEREÇO</h3>
+        </div>
+    </footer> 
 
-                <p class="paragrafos">Av. Gov. Roberto Silveira, 1900 - Jardim Ouro Preto, Nova Friburgo. CEP: 28635080</p>
-                <p class="paragrafos">Aberto das 8 às 17 horas.</p>
 
-            </div>
-        </footer> 
     </body>
 </html>
