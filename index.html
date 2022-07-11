@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="Icon" href="/img/ietec_logo.png">
     <title>IETEC</title>
 </head>
 <body>
+    
     <!-- Cabeçalho -->
     <header>
         <!-- Logo -->
-        <div id="logo">
+        <div id="logo" class="col-xs-12, col-sm-12">
             <a href="/index.html">
                 <img src="/img/ietec_logo.png" class="ietec_logo" alt="IETEC logo">
             </a>
         </div>
-        
-        <!-- Links do cabeçalho -->
-        <span id="link_cabecalho">
-            <ul id="links">
-                <li><a href="/html/relatorios.html">Relatórios</a></li>
-                <li><a href="/html/monitoramento.html">Monitoramento</a></li>
-                <li><a href="/html/planejamento.html">Nosso Planejamento</a></li>   
-                <li><a href="/html/quem_somos.html">Quem somos?</a></li>
+        <div class="col-xs-12, col-sm-12">
+            <!-- Links do cabeçalho -->
+            <ul id="links_header">                    
+                <li id="relatorio_header"><a href="/html/relatorios.html">Relatórios</a></li>
+                <li id="monitoramento_header"><a href="/html/monitoramento.html">Monitoramento</a></li>
+                <li id="planejamento_header"><a href="/html/planejamento.html">Nosso Planejamento</a></li>   
+                <li id="quem_somos_header"><a href="/html/quem_somos.html">Quem somos?</a></li>
             </ul>
-        </span>
+        </div>
 
     </header>
 
@@ -42,7 +46,7 @@
         <!-- Breve apresentação da IETEC -->
         <div id="quem_somos">
             <h3>Quem Somos?</h3>
-            <img src="/img/ietec_logo.png" alt="IETEC logo" class="ietec_logo">
+            <img src="/img/ietec_logo.png" alt="IETEC logo" class="img_quemsomos">
             <p class="div_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum laoreet eleifend. Maecenas rutrum augue ac quam malesuada, eget egestas nisl pulvinar.</p>
         </div>
     
@@ -61,13 +65,13 @@
 
             <div id="contato">
                 
-                <!-- TELEFONE -->
+                <!-- Telefone -->
                 <h3>CONTATO</h3>
                 <ul type="square">
                     <li>TELEFONE: (22) 9987583</li>
                     <li>TELEFONE: (22) 9987583</li>
                 
-                <!-- EMAIL -->
+                <!-- E-mail -->
                     <li>EMAIL: ietec@gmail.com</li>
                 </ul>
                 

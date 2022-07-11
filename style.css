@@ -1,8 +1,14 @@
+
+/* Bootstrap */
+
+
 /* Formatação do HTML base */
 body {
     margin: 0;
     background-color: #789fba;
     color: white;
+    font-family: "Arial", Helvetica, sans-serif;
+    
 }
 
 footer {
@@ -30,40 +36,118 @@ a {
 
 /* Headers id´s */
 
-#logo{
-    float: left;
-    padding-top: 10px; 
-}
-
-#links {
-    font-size: 24px;
+/*imagem da logo*/
+#logo  {
     display: flex;
-    justify-content: right;
-    margin-right: 3%;   
-    
+    flex-direction: row;
 }
 
-#links:hover{
+/*Cabeçalho*/
+#links_header {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
 
-    background-color: #ffa600;
+#relatorio_header {
+    color: white;
+    transition: background 1s;
+     margin-left: 15%;
+      margin-top: 1%;
+       border-radius: 5%;
+       padding-right: 3%;
+       padding-top: 2%;
+       width: auto;
+       height: 30%;
+       border-radius:10px;
+       border-color: black;
+  }
+
+#relatorio_header:hover{
+    background: yellow;
+}
+
+#monitoramento_header {
+    color: white;
+    transition: background 1s;
+     margin-left: 15%;
+      margin-top: 1%;
+       border-radius: 5%;
+       padding-right: 3%;
+       padding-top: 2%;
+       height: 30%;
+       width: auto;
+       border-radius:10px;
+       border-color: black;
+  }
+
+#monitoramento_header:hover{
+    background: yellow;
+}
+
+  #planejamento_header {
+    color: white;
+    transition: background 1s;
+     margin-left: 15%;
+      margin-top: 1%;
+       border-radius: 5%;
+       padding-right: 3%;
+       padding-left: 3%;
+       padding-top: 2%;
+       width: auto;
+       height: 50%;
+       border-radius:10px;
+       border-color: black;
+  }
+
+#planejamento_header:hover{
+    background: yellow;
+
+}
+
+#quem_somos_header {
+    color: white;
+    transition: background 1s;
+    margin-left: 15%;
+    margin-top: 1%;
+    border-radius: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 2%;
+    width: auto;
+    height: 50%;
+    border-radius:10px;
+    border-color: black;
+}
+
+#quem_somos_header:hover{
+    background: yellow;
+    
 }
 
 /* Body id´s */
 
-#principal{
+#principal {
     margin-top: 3%;
+    background-color: white;
 }
 
-#principal, h1{
+#principal, h1 {
     text-align: center;
     margin-bottom: 3%;
+    color: black;
 }
 
 #quem_somos {
     background-color: #aca2d0;
     padding: 2.5%;
     margin: 2.5%;
-    border-radius: 10px;
+    border-radius: 5%;
+    display: flex;
+}
+
+#quem_somos, p {
+    align-items: inline;
 }
 
 #patrocinadores {
@@ -97,6 +181,13 @@ a {
     height: 10em;
 }
 
+.img_quemsomos {
+    border-radius: 100%;
+    width: 10em;
+    height: 10em;
+    position: right; 
+}
+
 /* Body class´s */
 .linha_maior {
     width: 70%;
@@ -109,4 +200,3 @@ a {
 .div_paragrafo {    
     justify-content: left;
 }
-
