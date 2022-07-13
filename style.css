@@ -381,7 +381,6 @@
         border-radius: 100%;
         width: 10em;
         height: 10em;
-
     }
 
 /* Body id´s: tablet */
@@ -390,6 +389,7 @@
         margin-top: 3%;
         background-color: white;
     }
+    
 
     #principal, h1 {
         text-align: center;
