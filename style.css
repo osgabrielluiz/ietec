@@ -1,6 +1,7 @@
-/* Celular */
+/* PC */
 @media(min-width: 1366px){
 /* Formatação do HTML base */
+
     body {
         margin: 0;
         background-color: #789fba;
@@ -36,18 +37,28 @@
 
     /*imagem da logo*/
     #logo  {
-        display: flex;
+        display: block;
         flex-direction: row;
+        border-radius: 100%;
+        height: auto;
+        width: 10% ;
+        margin-left: 5%;
+        
     }
 
     /*Cabeçalho*/
     #links_header {
+        float: right;
+        margin-top: -8%;
+        margin-right: 15%;
         display: flex;
         flex-direction: row;
-        font-size: 20px;
-        width: 60%;
+        font-size: 1.5em;
+        width: 70%;
+        
+        align-items: center ;
     }
-
+  
     /* Relatorio */
     #relatorio_header {
         color: white;
@@ -60,11 +71,12 @@
         width: 30%;
         height: 30%;
         border-radius:10px;
-        border-color: black;
+        
+        
     }
 
     #relatorio_header:hover{
-        background: yellow;
+        background: #ffa600;
     }
 
     /* Monitoramento */
@@ -80,10 +92,11 @@
         width: 30%;
         border-radius:10px;
         border-color: black;
+
     }
 
     #monitoramento_header:hover{
-        background: yellow;
+        background: #ffa600;
     }
 
     /* Planejamento */
@@ -100,10 +113,11 @@
         height: 50%;
         border-radius:10px;
         border-color: black;
+        text-align: justify-all;
     }
 
     #planejamento_header:hover{
-        background: yellow;
+        background: #ffa600;
 
     }
 
@@ -119,14 +133,15 @@
         padding-top: 2%;
         width: auto;
         height: 50%;
-        border-radius:10px;
+        border-radius: 10px;
         border-color: black;
+        text-align: justify-all;
     }
 
     #quem_somos_header:hover{
-        background: yellow;
+        background: #ffa600;
         
-    }
+    } 
 
     .topnav{
         display: none;
@@ -138,11 +153,16 @@
     #principal {
         margin-top: 3%;
         background-color: white;
+        border: 2px solid #ffa600;
+        width: 75%; 
+        margin-left: 10em;
+        border-radius: 30px 0px 30px 0px;
+        margin-bottom: 3%;
+
     }
 
     #principal, h1 {
         text-align: center;
-        margin-bottom: 3%;
         color: black;
     }
 
@@ -156,7 +176,7 @@
     }
 
     #quem_somos, p {
-        align-items: inline;
+        
     }
 
 
@@ -178,28 +198,38 @@
     /* Footer id´s */
     /* Área de contato*/
     #contato {
-        width: 33%;
+        width: 30%;
+        border-right: 2px solid #ffa600;
+    }
+
+    #contato, h3 {
+        text-align: center;
     }
 
     /* Área das Mídias Sociais */
     #social-media {
-        width: 33%;
+        width: 30%;
+        border-right: 2px solid #ffa600;
+    }
+
+    #social-media, h3 {
+        text-align: center;
     }
 
     /* Área do endereço */
     #endereco {
-        width: 33%;
+        width: 30%;
+    }
+
+    #endereco, h3 {
+        text-align: center;
+    }
+    
+    #endereco, p {
+        text-align: auto;
     }
 
     /* Header class´s */
-
-    /* Classe da imagem: .logo */
-    .ietec_logo {
-        border-radius: 100%;
-        width: 10em;
-        height: 10em;
-     
-    }
 
     /* Classe da imagem: .quem_somos */
     .img_quemsomos {
@@ -209,7 +239,7 @@
         display: inline-block;
         
     }
-    .img_quemsomos, p{
+    .img_quemsomos, p {
         margin-top: 10%;
         display: inline-block;
 
@@ -232,275 +262,4 @@
         justify-content: left;
     }
 
-}
-
-/* Tablet */
-@media(min-width: 768px) and (max-width: 992px){
-/* Formatação do HTML base (Tablet) */
-    body {
-        margin: 0;
-        background-color: #789fba;
-        color: white;
-        font-family: "Arial", Helvetica, sans-serif;
-        
-    }
-
-    footer {
-        background-color: #aca2d0;
-        display: flex;
-    }
-
-
-    li {
-        list-style-type: none; 
-    }
-
-    h1 {
-        align-items: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        padding-left: 20px;
-    }
-
-/* Formatação dos Id´s */
-
-/* Headers id´s */
-
-    /*Imagem da logo*/
-    #logo  {
-        display: flex;
-        flex-direction: row;
-        width: 20%;
-    }
-
-    /*Cabeçalho*/
-    #links_header {
-        display: flex;
-        flex-direction: row;
-        font-size: 20px;
-        width: 80%;
-    }
-
-    /* Relatorio Div: tablet */
-    #relatorio_header {
-        float: left;
-        color: white;
-        transition: background 1s;
-        margin-right: 15%;
-        margin-top: 1%;
-        border-radius: 5%;
-        padding-right: 3%;
-        padding-top: 2%;
-        width: 40%;
-        border-radius:10px;
-        border-color: black;
-    }
-
-    #relatorio_header:hover{
-        background: yellow;
-    }
-
-    /* Monitoramento Div: tablet */
-    #monitoramento_header {
-        float: left;
-        color: white;
-        transition: background 1s;
-        margin-left: 40%;
-        margin-right: 5%;
-        margin-top: 1%;
-        border-radius: 5%;
-        padding-right: 3%;
-        padding-top: 2%;
-        height: 30%;
-        width: 40%;
-        border-radius:10px;
-        border-color: black;
-    }
-
-    #monitoramento_header:hover{
-        background: yellow;
-    }
-
-    /* Planejamento Div: tablet */
-    #planejamento_header {
-        float:left;
-        color: white;
-        transition: background 1s;
-        margin-right:40%;
-        margin-left: 70%;
-        margin-top: 1%;
-        border-radius: 5%;
-        padding-right: 3%;
-        padding-left: 3%;
-        padding-top: 2%;
-        width: 20%;
-        height: 50%;
-        border-radius:10px;
-        border-color: black;
-    }
-
-    /* Animação do link planejamento: tablet */
-    #planejamento_header:hover{
-        background: yellow;
-
-    }
-    
-    /* id do link quem somos: tablet */
-    #quem_somos_header {
-        color: white;
-        transition: background 1s;
-        margin-left: 40%;
-        margin-right: 40%;
-        margin-top: 1%;
-        border-radius: 5%;
-        padding-right: 3%;
-        padding-left: 3%;
-        padding-top: 2%;
-        width: 40%;
-        height: 50%;
-        border-radius:10px;
-        border-color: black;
-    }
-
-    #quem_somos_header:hover{
-        background: yellow;
-        
-    }
-
-    /* Header class´s: tablet */
-    .ietec_logo {
-        border-radius: 100%;
-        width: 10em;
-        height: 10em;
-    }
-
-    .img_quemsomos {
-        border-radius: 100%;
-        width: 10em;
-        height: 10em;
-    }
-
-/* Body id´s: tablet */
-    /* Div prinipal: tablet */
-    #principal {
-        margin-top: 3%;
-        background-color: white;
-    }
-    
-
-    #principal, h1 {
-        text-align: center;
-        margin-bottom: 3%;
-        color: black;
-    }
-
-    /* Div quem_somos: tablet */
-    #quem_somos {
-        background-color: #aca2d0;
-        padding: 2%;
-        margin: 2%;
-        border-radius: 10px;
-    }
-
-    #quem_somos, p {
-        align-items: inline;
-    }
-
-    /* Div patrocinadores: tablet */
-    #patrocinadores {
-        background-color: #aca2d0;
-        padding: 2.5%;
-        margin: 2.5%;
-        border-radius: 10px;
-    }
-
-    #patrocinador_icon {
-        height: 10%;
-        width: 10%;
-        justify-content: right;
-    }
-
-/* Body class´s: tablet */
-    /* Formatação das linhas (<hr>): tablet*/
-    .linha_maior {
-        width: 70%;
-        color: #ffa600;
-    }
-    .linha_menor {
-        width: 50%;   
-        color: #ffa600;
-    }
-
-    /* Formatação dos parágrafos: tablet */
-    .div_paragrafo {    
-        justify-content: left;
-    }
-
-}
-/* Footer id´s: tablet */
-    #contato {
-        width: 33%;
-    }
-
-    #social-media {
-        width: 33%;
-    }
-
-    #endereco {
-        width: 33%;
-    }
-
-/* Celular */
-@media(max-width: 768px){
-    
-       /*Menu navegação (burger)*/  
-      .mobile-container {
-        max-width: 480px;
-        margin: auto;
-        background-color: #555;
-        height: 500px;
-        color: white;
-        border-radius: 10px;
-      }
-      
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-      }
-      
-      .topnav #myLinks {
-        display: none;
-      }
-      
-      .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-      
-      .topnav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      .active {
-        background-color: #04AA6D;
-        color: white;
-      }
-
- 
 }
