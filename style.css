@@ -1,0 +1,217 @@
+/* Formatação das tag´s HTML  */
+body {
+    margin: 0;
+    background-color:white;
+    color: white;
+    font-family: "Arial", Helvetica, sans-serif;        
+}
+
+footer {
+    background-color: #547e9a;
+    display: block;
+}
+
+li {
+    list-style-type: none; 
+}
+
+h1 {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+
+/* Formatção dos Id´s */
+#principal {
+    background-color: #003f5c;
+    width: auto;
+    height: 34em;
+    margin-top: -3%;  
+    color: lightgray;   
+}
+    
+#incubadora{
+    color: lightgray;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 50px;
+}
+    
+#paragrafo{
+    color: lightgray;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 5%;
+}
+    
+/* Formatação das linhas (<hr>):  */
+.linha_maior {
+    margin-top: 18%;
+    width: 70%;
+    color: #547e9a;
+}
+
+.linha_menor {
+    width: 50%;   
+    color: #547e9a;
+}
+    
+#h2_somos{
+    display:inline-table;
+    margin-top: 5%;
+    margin-left: 5%;
+    color:black;
+}
+    
+#p_somos{
+    color: black;
+    margin-left: 5%;
+    text-align: justify;
+    width: 65%;
+}
+    
+#img_somos {
+    width: 15%;
+    float: right;
+    margin-top: -18%;
+    padding-right: 60px;   
+}
+    
+#quem_somos_text {
+    display: inline;
+}
+    
+/* Formatação das classes */
+/* Header */
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+
+}
+
+.logo{
+    width: 5em;
+    height: auto;
+    float: left;
+    margin-left: 3%;
+    flex-direction: row;
+    margin-top: -2%;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #547e9a;
+    height: 70px;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a.logo:hover {
+    background-color: #72acd391;
+}
+
+.estilo-a:hover {
+    background-color: rgb(253, 245, 1);
+    color: #003f5c;
+}
+
+.header-right {
+    float: right;
+    padding-top: 10px;
+
+}
+
+/* Quem Somos */
+.quem_somos {
+    margin-top: -2%;
+    background-color: white;
+    width: 65em;
+    margin: 0 auto;
+    margin-top: 8%;
+    border: 3px solid #547e9a;
+    border-radius: 50px 0px 50px 0px;
+    margin-bottom: 3%;
+    height: 300px;
+}
+
+/* Footer */
+.htext{
+    font-size: 24px;
+    color: #003148;
+}
+
+/* Formatação do rodapé */
+.rodape {
+    display: flex;
+}
+
+/* Formatação dos contato */
+.contato{
+    border-right: 2px solid #003f5c;
+    width: 30%;
+    text-align: center;
+}
+
+/* Formatação das rede social*/
+.redes_sociais{
+    border-right: 2px solid #003f5c;
+    width: 30%;
+    text-align: center;
+}
+
+.social{
+    color: white;
+}
+
+/* Formatação do endereço */
+.endereco{
+    width: 40%;
+    text-align: center;
+}
+
+/* Página Relátorios */
+/* Formatação das tabelas */
+.tb_relatorios{
+    width: 100%;
+    color: #003148;
+    border: 1px solid black;
+}
+
+/* Formatação da coluna: data */
+.borda_empresa{
+    width: 80%;
+    border: 1px solid black;
+}
+
+/* Formatação da coluna: empresa */
+.borda_data{
+    width: 20%;
+    border: 1px solid black;
+}
+
+/* Monitoramento*/
+/* Formatação dos textos de monitoramento */
+.ptext{
+    color: #003148;
+}
