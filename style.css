@@ -10,7 +10,9 @@
         margin: 0;
         background-color: white;
         color: white;
-        font-family: "Arial", Helvetica, sans-serif;        
+        font-family: "Arial", Helvetica, sans-serif; 
+        max-width: 100%;
+        overflow-x: hidden;       
     }
 
     footer {
@@ -129,14 +131,14 @@
 
     /* Formatação dos contato */
     .contato{
-        border-right: 2px solid #003f5c;
+        
         width: 30%;
         text-align: center;
     }
 
     /* Formatação das rede social*/
     .redes_sociais{
-        border-right: 2px solid #003f5c;
+        
         width: 30%;
         text-align: center;
     }
@@ -159,7 +161,7 @@
         width: auto;
         height: 34em;
         margin-top: -3%;  
-        color: lightgray;   
+        color: lightgray;  
     }
         
     #incubadora{
@@ -175,10 +177,11 @@
         margin: 0 auto;
         font-size: 20px;
         margin-top: 5%;
+        padding-top: 1em;
     }
         
   
-/* Formatação "Quem somos": index */
+/* Formatação "sobre": index */
     .quem_somos {
         margin-top: -2%;
         background-color: white;
@@ -218,17 +221,43 @@
     }
 
 
-/* Formatação das linhas(<hr>):  */
-    .linha_maior {
-        margin-top: 18%;
-        width: 70%;
-        color: #547e9a;
-    }
+/* Dashboard */
 
-    .linha_menor {
-        width: 50%;   
-        color: #547e9a;
-    }
+.conteudo_principal_dashboard{
+    background: rgb(255, 255, 255);
+    color: #003148;
+    
+    
+}
+
+#grafico_teia{
+    margin-left: -25%;
+    margin-right: 25%;
+    width: 38%;
+}
+
+#grafico_barra{
+    width: 35%;
+    margin-left: -48%;
+}
+
+.conteudo_principal_dashboard img{
+    padding-left: 33%;
+}
+
+.conteudo_principal_dashboard p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.medalhas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: center;
+    margin-top: 4%;
+    filter: saturate(0);
+    
+}   
 
 
 /* empresa_planejamento.html */
@@ -358,13 +387,34 @@
     margin-left: 25px;
 }
 
-#galeria_img{
-    height: auto;
-    width: 25%; 
+.galeria_img{
     margin-left: 1%;
+    
     margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;   
 
-} 
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3%;
+    margin-left: 3%;
+    row-gap: 3%;
+}   
+
+
+#iframe_mapa{
+    text-align: center;
+    margin-bottom: 2%;
+    
+
+}
+
+
+
 
 /* relatorios.html */
 /* Página Relátorios */
